@@ -18,12 +18,12 @@
 case "$1" in
   1) # Action install
     if [ -f "/var/lib/ambari-agent/install-helper.sh" ]; then
-        /var/lib/ambari-agent/install-helper.sh install
+        bash /var/lib/ambari-agent/install-helper.sh install
     fi
   ;;
   2) # Action upgrade
     if [ -f "/var/lib/ambari-agent/install-helper.sh" ]; then
-        /var/lib/ambari-agent/install-helper.sh upgrade
+        bash /var/lib/ambari-agent/install-helper.sh upgrade
     fi
   ;;
 esac
